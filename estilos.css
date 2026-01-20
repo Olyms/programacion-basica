@@ -1,0 +1,148 @@
+/* ===== ESTILOS GENERALES ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0f172a;
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+/* ===== NAVEGACIÓN ===== */
+.nav {
+  background-color: #020617;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav h1 {
+  font-size: 20px;
+  color: #38bdf8;
+}
+
+.nav a {
+  color: #e5e7eb;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav a:hover,
+.nav a.activo {
+  color: #38bdf8;
+}
+
+/* ===== CONTENEDOR ===== */
+.contenedor {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+/* ===== HERO ===== */
+.hero h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #cbd5f5;
+  margin-bottom: 20px;
+}
+
+/* ===== BOTONES ===== */
+.botones {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  background-color: #1e293b;
+  color: #e5e7eb;
+  padding: 12px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #334155;
+}
+
+.btn-principal {
+  background-color: #38bdf8;
+  color: #020617;
+  font-weight: bold;
+}
+
+.btn-principal:hover {
+  background-color: #0ea5e9;
+}
+
+/* ===== SECCIONES ===== */
+.intro,
+.lecciones {
+  margin-top: 40px;
+}
+
+.intro h3,
+.lecciones h3 {
+  margin-bottom: 15px;
+  color: #38bdf8;
+}
+
+.intro ul {
+  margin-left: 20px;
+}
+
+.intro li {
+  margin-bottom: 8px;
+}
+
+/* ===== TARJETAS ===== */
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.tarjeta {
+  background-color: #020617;
+  padding: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #e5e7eb;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.tarjeta:hover {
+  background-color: #020617;
+  transform: translateY(-5px);
+}
+
+.tarjeta h4 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+.tarjeta.deshabilitada {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  margin-top: 60px;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #94a3b8;
+  border-top: 1px solid #1e293b;
+}
